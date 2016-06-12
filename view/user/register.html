@@ -1,0 +1,107 @@
+<div class="row">
+  <form action="" method="POST" role="form">
+    <legend>Dodaj instruktora</legend>
+    <div class="form-group col-md-6">
+      <label for="">Login</label>
+      <input type="text" class="form-control" ng-model="user.username" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Hasło</label>
+      <input type="text" class="form-control" ng-model="user.password" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Imie</label>
+      <input type="text" class="form-control" ng-model="user.imie" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Nazwisko</label>
+      <input type="text" class="form-control" ng-model="user.nazwisko" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Pseudo</label>
+      <input type="text" class="form-control" ng-model="user.pseudo" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Data Urodzenia</label>
+      <input type="text" class="form-control" ng-model="user.dataUrodzenia" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Miejsce Urodzenia</label>
+      <input type="text" class="form-control" ng-model="user.miejsceUrodzenia" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Email</label>
+      <input type="text" class="form-control" ng-model="user.email" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Telefon</label>
+      <input type="text" class="form-control" ng-model="user.telefon" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Wojewodztwo</label>
+      <input type="text" class="form-control" ng-model="user.wojewodztwo" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Kod Pocztowy</label>
+      <input type="text" class="form-control" ng-model="user.kodPocztowy" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Miejscowosc</label>
+      <input type="text" class="form-control" ng-model="user.miejscowosc" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Ulica</label>
+      <input type="text" class="form-control" ng-model="user.ulica" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Nr domu</label>
+      <input type="text" class="form-control" ng-model="user.nrDomu" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Nr Mieszkania</label>
+      <input type="text" class="form-control" ng-model="user.nrMieszkania" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Odznaka numer</label>
+      <input type="text" class="form-control" ng-model="user.odznaka.numer" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Odznaka rok wydania</label>
+      <input type="text" class="form-control" ng-model="user.odznaka.rok" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Odznaka miejsce kursu</label>
+      <input type="text" class="form-control" ng-model="user.odznaka.miejsce" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Odznaka data wydania</label>
+      <input type="text" class="form-control" ng-model="user.odznaka.data" >
+      <label for="">Status Instruktora</label>
+      <select ng-model="user.status" class="form-control">
+        <option value="Aktywny">Aktywny</option>
+        <option value="Nie Aktywny">Nie Aktywny</option>
+      </select>
+       <label for="">Status weryfikacji</label>
+       <select ng-model="user.weryfikacja" class="form-control">
+         <option value="Brak">Brak</option>
+         <option value="Pełna">Pełna</option>
+         <option value="Warunkowa">Warunkowa</option>
+       </select>
+       <label for="">Klasa Instruktorska</label>
+       <select ng-model="user.klasa" class="form-control">
+         <option value="C">C</option>
+         <option value="B">B</option>
+         <option value="A">A</option>
+       </select>
+
+    </div>
+    <div class="form-group col-md-6">
+      <label for="">Opis</label>
+      <textarea name="" id="" cols="30" rows="10" class="form-control" ng-model="user.opis"></textarea>
+
+    </div>
+
+
+    <a ng-click="dodawanie(user)" class="btn btn-primary">Dodaj nowego</a>
+  </form>
+  </div>

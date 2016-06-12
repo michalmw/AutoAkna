@@ -1,0 +1,53 @@
+<!doctype html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Logowanie użytkowników i sesje</title>
+  <link rel="stylesheet" type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body ng-app="aknaApp">
+  <aside class="col-md-2 sidebar" ng-show="zalogowany">
+    <h3>AutoAkna v X.Y.Z</h3>
+    <ul>
+      <li><a href="/#/"><i class="fa fa-home"></i> Strona Główna</a></li>
+      <li><a href="/#/instruktorzy"> <i class="fa fa-user-md"></i> Instruktorzy</a></li>
+      <li><a href=""><i class="fa fa-ambulance"></i> Kursy</a></li>
+      <li><a style="cursor: pointer;" ng-click="wyloguj()"><i class="fa fa-wheelchair"></i> Wyloguj</a></li>
+    </ul>
+  </aside>
+  <content class="row col-md-10">
+    <div class="col-md-12 main">
+       <ng-view></ng-view>
+    </div>
+  </content>
+  <footer>
+    <p>
+      Strona stworzona przez <a href="http://surprise.design">Surprise.Design</a> dla HSR 2015
+    </p>
+  </footer>
+
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.4.7/angular-route.min.js"></script>
+
+   <!-- Moje -->
+  <script src="/static/js/my_app.js"></script>
+
+  <!-- Controlller -->
+  <script src="/controllers/homeController.js"></script>
+  <script src="/controllers/userController.js"></script>
+    <!-- Instruktorzy -->
+    <script src="/controllers/instruktorzy/listaController.js"></script>
+    <script src="/controllers/instruktorzy/dodajController.js"></script>
+    <script src="/controllers/instruktorzy/edytujController.js"></script>
+
+  <script src="/controllers/instruktorzyController.js"></script>
+  <!-- Services -->
+  <script src="/services/loginService.js"></script>
+  <script src="/services/sessionService.js"></script>
+
+</body>
+</html>
